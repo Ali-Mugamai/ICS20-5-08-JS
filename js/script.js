@@ -19,9 +19,11 @@ function myButtonClicked() {
   const num_one = parseInt(document.getElementById("first_num").value)
   const num_two = parseInt(document.getElementById("second_num").value)
   let counter = 0
+  let answer = 0
+  let answer = answer + num_one
   while (num_one > num_two) {
     counter = counter + 1
-    num_one = num_one - num_two
+    answer = num_one - num_two
   }
   document.getElementById("answer").innerHTML =
     "<p>Value is " + counter + "R" + num_one + "</p>"
