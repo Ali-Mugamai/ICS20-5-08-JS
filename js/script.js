@@ -26,5 +26,5 @@ function myButtonClicked() {
     answer = num_one - num_two
   }
   document.getElementById("answer").innerHTML =
-    "<p>Value is " + counter + "R" + num_one + "</p>"
+    "<p>Value is " + counter + "R" + answer + "</p>"
 }
