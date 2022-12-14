@@ -24,8 +24,8 @@ function myButtonClicked() {
 
   if (num_one > 0 && num_two > 0) {
     while (answer >= num_two) {
-      counter = counter + 1;
-      answer = answer - num_two;
+      counter = counter + 1
+      answer = answer - num_two
     }
   }
   if (answer == 0) {
