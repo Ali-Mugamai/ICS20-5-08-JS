@@ -8,8 +8,8 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS20-5-06-JS/sw.js", {
-    scope: "/ICS20-5-06-JS/",
+  navigator.serviceWorker.register("/ICS20-5-08-JS/sw.js", {
+    scope: "/ICS20-5-08-JS/",
   })
 }
 /**
@@ -19,10 +19,10 @@ function myButtonClicked() {
   const num_one = parseInt(document.getElementById("first_num").value)
   const num_two = parseInt(document.getElementById("second_num").value)
   let counter = 0
-  let answer = 0
-  while (counter < num_two) {
+  let answer = answer + num_one
+  while (num_one > num_two) {
     counter = counter + 1
-    answer = answer + num_one
+    num_one = num_one - num_two
   }
   document.getElementById("answer").innerHTML = "<p>Value is " + answer + "</p>"
 }
